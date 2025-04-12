@@ -35,8 +35,8 @@ function validateUsername(username) {
 // console.log(result);
 
 function validateUsernameWithRegex(username) {
-  let regex = /^(?=.*[a-zA-Z])(?=.*\d)(?=.*_)[a-zA-Z0-9_]+$/;
-  return regex.test(username);
+  let usernameRegex = /^(?=.*[a-zA-Z])(?=.*\d)(?=.*_)[a-zA-Z0-9_]+$/;
+  return usernameRegex.test(username);
 }
 
 const result = validateUsernameWithRegex("ali_123");

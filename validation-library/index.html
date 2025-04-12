@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <input type="file">
+
+
+
+    <script>
+        let input = document.querySelector("input")
+        function validateFileSize(file, maxSize = 1024000) {
+            return file.size <= maxSize
+        }
+
+        
+        input.addEventListener("change", e => {
+            console.log(e.target.files[0])
+            console.log(validateFileSize(e.target.files[0],5000000))
+        })
+    </script>
+
+</body>
+
+</html>
