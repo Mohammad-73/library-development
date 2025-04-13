@@ -6,7 +6,7 @@
 
 // 1390/6/20
 
-function validateJalaliDate(inputDate) {
+function validateJalaliDate2(inputDate) {
   const parts = inputDate.split("/");
   const year = parseInt(parts[0]);
   const month = parseInt(parts[1]);
@@ -46,7 +46,7 @@ function validateJalaliDate(inputDate) {
  * @param {string} inputDate - The date string to validate in "YYYY/MM/DD" format
  * @returns {boolean} - True if the date is valid, false otherwise
  */
-function validateJalaliDate2(inputDate) {
+function validateJalaliDate(inputDate) {
   if (!inputDate || typeof inputDate !== "string") return false;
 
   const parts = inputDate.split("/");

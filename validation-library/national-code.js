@@ -27,7 +27,7 @@
 // console.log(210/11)
 // console.log(210%11)
 
-function validateNationalCode(code) {
+function validateNationalCodeOriginal(code) {
   const nationalCodeRegex = /^\d{10}$/;
   if (!nationalCodeRegex.test(code)) {
     return false;
@@ -53,7 +53,7 @@ function validateNationalCode(code) {
  * @returns {boolean} - True if the national code is valid, false otherwise.
  */
 // Clean Version With ChatGPT
-function validateNationalCode2(code) {
+function validateNationalCode(code) {
   if (typeof code !== "string" || !/^\d{10}$/.test(code)) return false;
 
   const digits = code.split("").map(Number);
