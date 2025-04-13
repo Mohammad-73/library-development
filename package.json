@@ -1,0 +1,26 @@
+{
+  "name": "library-development",
+  "version": "1.0.0",
+  "description": "Is a Persian data validation library that helps you validate your input data effectively and correctly",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mohammad-73/library-development.git"
+  },
+  "keywords": [
+    "persian validator",
+    "Iran phone number validator",
+    "Iran national code validator"
+  ],
+  "author": "Mohammad Khalili",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mohammad-73/library-development/issues"
+  },
+  "homepage": "https://github.com/Mohammad-73/library-development#readme"
+}

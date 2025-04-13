@@ -11,7 +11,7 @@
  * @param {string} url - The URL string to validate.
  * @returns {boolean} - True if the URL is valid, false otherwise.
  */
-function validateUrl(url) {
+export default function validateUrl(url) {
   try {
     new URL(url);
     return true;
@@ -19,5 +19,3 @@ function validateUrl(url) {
     return false;
   }
 }
-
-console.log(validateUrl("https://localhost:8000"));

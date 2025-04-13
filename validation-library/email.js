@@ -28,12 +28,10 @@
  * valiDateEmail(null);
  * valiDateEmail(123);
  */
-function valiDateEmail(email) {
+export default function valiDateEmail(email) {
   const emailRegex = /^[\w-\.]+@([\w]+\.)[\w-]{2,4}$/;
   console.log(emailRegex.test(email));
 }
-
-valiDateEmail("m.khalili7310@gmail.com");
 
 // ^ = 	Start of string
 

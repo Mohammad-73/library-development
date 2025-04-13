@@ -7,9 +7,7 @@
  * @param {string} code - The postal code to validate.
  * @returns {boolean} - True if the postal code is valid, false otherwise.
  */
-function valiDatePostalCode(code) {
+export default function valiDatePostalCode(code) {
   const regex = /^\d{10}$/;
   return regex.test(code);
 }
-
-console.log(valiDatePostalCode("517467904s"));

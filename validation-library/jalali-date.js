@@ -46,7 +46,7 @@ function validateJalaliDate2(inputDate) {
  * @param {string} inputDate - The date string to validate in "YYYY/MM/DD" format
  * @returns {boolean} - True if the date is valid, false otherwise
  */
-function validateJalaliDate(inputDate) {
+export function validateJalaliDate(inputDate) {
   if (!inputDate || typeof inputDate !== "string") return false;
 
   const parts = inputDate.split("/");
@@ -78,7 +78,7 @@ function validateJalaliDate(inputDate) {
  * @param {string} inputDate - The date string to validate in "YYYY/MM/DD" format
  * @returns {boolean} - True if the date is valid, false otherwise
  */
-function validateJalaliDateWithRegex(inputDate) {
+export default function validateJalaliDateWithRegex(inputDate) {
   const pattern = /^(\d{4})\/(0?[1-9]|1[0-2])\/(0?[1-9]|[12][0-9]|3[01])$/;
   const match = inputDate.match(pattern);
 
@@ -92,5 +92,3 @@ function validateJalaliDateWithRegex(inputDate) {
 
   return true;
 }
-
-console.log(validateJalaliDateWithRegex("1390/4/31"));
