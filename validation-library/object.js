@@ -10,6 +10,12 @@ const jsonData = `{
     "position": "Designer"
 } `;
 
+/**
+ * It receives a value and checks if it is a valid non-null object.
+ * The function returns true if the input is of type 'object' and not null.
+ * @param {any} obj - The value to validate as an object.
+ * @returns {boolean} - True if the value is a valid object, false otherwise.
+ */
 function validateObject(obj) {
   try {
     return typeof obj === "object" && obj !== null;

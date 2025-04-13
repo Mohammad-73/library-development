@@ -31,13 +31,19 @@ function validateUsername(username) {
   }
 }
 
-// const result = validateUsername("ali_123");
-// console.log(result);
+const result = validateUsername("ali_123");
+console.log(result);
 
+/**
+ * It receives a username and checks that it has at least one letter, one number and one underscore.
+ * The username can only contain letters, numbers and underscore.
+ * @param {string} username - The username to validate.
+ * @returns {boolean} - True if the username is valid, false otherwise.
+ */
 function validateUsernameWithRegex(username) {
   let usernameRegex = /^(?=.*[a-zA-Z])(?=.*\d)(?=.*_)[a-zA-Z0-9_]+$/;
   return usernameRegex.test(username);
 }
 
-const result = validateUsernameWithRegex("ali_123");
-console.log(result);
+const result2 = validateUsernameWithRegex("ali_123");
+console.log(result2);

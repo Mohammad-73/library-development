@@ -6,6 +6,12 @@
 // len: 8 || > 8
 // AfaG456&@()
 
+/**
+ * It receives a password and checks if it meets the security requirements.
+ * The password must contain at least one uppercase letter, one lowercase letter, one number, one special character, and be at least 8 characters long.
+ * @param {string} password - The password to validate.
+ * @returns {boolean} - True if the password is valid, false otherwise.
+ */
 function validatePassword(password) {
   const passwordRegex = /^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[\W_]).{8,}$/;
 
