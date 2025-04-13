@@ -53,7 +53,7 @@ function validateNationalCodeOriginal(code) {
  * @returns {boolean} - True if the national code is valid, false otherwise.
  */
 // Clean Version With ChatGPT
-function validateNationalCode(code) {
+export default function validateNationalCode(code) {
   if (typeof code !== "string" || !/^\d{10}$/.test(code)) return false;
 
   const digits = code.split("").map(Number);
@@ -70,5 +70,3 @@ function validateNationalCode(code) {
     ? checkDigit === remainder
     : checkDigit === 11 - remainder;
 }
-
-console.log(validateNationalCode("0010350829"));

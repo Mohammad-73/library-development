@@ -16,12 +16,10 @@ const jsonData = `{
  * @param {any} obj - The value to validate as an object.
  * @returns {boolean} - True if the value is a valid object, false otherwise.
  */
-function validateObject(obj) {
+export default function validateObject(obj) {
   try {
     return typeof obj === "object" && obj !== null;
   } catch (err) {
     return err;
   }
 }
-
-console.log(validateObject(user));

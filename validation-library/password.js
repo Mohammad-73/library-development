@@ -12,7 +12,7 @@
  * @param {string} password - The password to validate.
  * @returns {boolean} - True if the password is valid, false otherwise.
  */
-function validatePassword(password) {
+export default function validatePassword(password) {
   const passwordRegex = /^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[\W_]).{8,}$/;
 
   if (passwordRegex.test(password)) {

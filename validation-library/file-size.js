@@ -22,8 +22,6 @@
  *   alert('File size exceeds the limit');
  * }
  */
-function validateFileSize(file, maxSize = 1024000) {
+export default function validateFileSize(file, maxSize = 1024000) {
   return file.size <= maxSize;
 }
-
-console.log(validateFileSize(file));

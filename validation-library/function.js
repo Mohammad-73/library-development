@@ -14,8 +14,6 @@
  * validateFunction("function() {}");
  * validateFunction(42);
  */
-function validateFunction(func) {
+export default function validateFunction(func) {
   return typeof func === "function";
 }
-
-console.log(validateFunction(function Ali() {}));

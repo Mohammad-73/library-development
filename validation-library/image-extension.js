@@ -17,10 +17,8 @@
  * // returns false
  * validateImageExtension("document.pdf");
  */
-function validateImageExtension(fileName) {
+export default function validateImageExtension(fileName) {
   const validExtension = ["png", "jpg"];
   const fileExtension = fileName.split(".").pop().toLowerCase();
   return validExtension.includes(fileExtension);
 }
-
-console.log(validateImageExtension("mohammad.file.jpg"));

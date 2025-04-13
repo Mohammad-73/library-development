@@ -18,13 +18,11 @@
  * @param {string} number - The phone number to validate.
  * @returns {boolean} - True if the phone number is valid, false otherwise.
  */
-function validatePhoneNumber(number) {
+export default function validatePhoneNumber(number) {
   const phoneNumberRegex = /^(09)(1[0-9]|3[0-9]|2[0-9])\d{7}$/;
 
   return phoneNumberRegex.test(number);
 }
-
-console.log(validatePhoneNumber("09121111111"));
 
 // ^ =	Start of string
 
