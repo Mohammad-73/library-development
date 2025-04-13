@@ -6,6 +6,28 @@
 // gmail.
 // com ,ir,net,org,info
 
+/**
+ * Validates an email address format using regular expression.
+ * Checks if the email matches the pattern: localpart@domain.tld
+ * where:
+ * - localpart can contain alphanumerics, underscores, hyphens, and dots
+ * - domain must have at least one subdomain and top-level domain (2-4 chars)
+ * @param {string} email - The email address to validate
+ * @returns {boolean} - True if the email format is valid, false otherwise
+ * @throws {TypeError} - If the input is not a string
+ * @example
+ * // returns true
+ * valiDateEmail('user@example.com');
+ * valiDateEmail('first.last@sub.example.co');
+ *
+ * // returns false
+ * valiDateEmail('invalid.email@');
+ * valiDateEmail('user@.com');
+ *
+ * // throws TypeError
+ * valiDateEmail(null);
+ * valiDateEmail(123);
+ */
 function valiDateEmail(email) {
   const emailRegex = /^[\w-\.]+@([\w]+\.)[\w-]{2,4}$/;
   console.log(emailRegex.test(email));

@@ -36,6 +36,16 @@ function validateJalaliDate(inputDate) {
   return true;
 }
 
+/**
+ * Validates a Jalali (Persian) date string in the format "YYYY/MM/DD".
+ * Checks for proper format, valid year (1000-9999), valid month (1-12),
+ * and valid day according to Jalali calendar rules:
+ * - Months 1-6 (Farvardin-Shahrivar) have 31 days
+ * - Months 7-11 (Mehr-Bahman) have 30 days
+ * - Month 12 (Esfand) has 29 days (leap years not considered)
+ * @param {string} inputDate - The date string to validate in "YYYY/MM/DD" format
+ * @returns {boolean} - True if the date is valid, false otherwise
+ */
 function validateJalaliDate2(inputDate) {
   if (!inputDate || typeof inputDate !== "string") return false;
 
@@ -58,6 +68,16 @@ function validateJalaliDate2(inputDate) {
   return true;
 }
 
+/**
+ * Validates a Jalali (Persian) date string using regex pattern matching.
+ * Checks format "YYYY/MM/DD" with optional leading zeros, then validates
+ * day ranges according to Jalali calendar rules:
+ * - Months 1-6: max 31 days
+ * - Months 7-11: max 30 days
+ * - Month 12: max 29 days (leap years not considered)
+ * @param {string} inputDate - The date string to validate in "YYYY/MM/DD" format
+ * @returns {boolean} - True if the date is valid, false otherwise
+ */
 function validateJalaliDateWithRegex(inputDate) {
   const pattern = /^(\d{4})\/(0?[1-9]|1[0-2])\/(0?[1-9]|[12][0-9]|3[01])$/;
   const match = inputDate.match(pattern);

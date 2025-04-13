@@ -12,6 +12,12 @@
 // 09121111111
 // 09333457000
 
+/**
+ * It receives a phone number and checks if it matches the specific pattern for valid numbers.
+ * The phone number must start with '09' followed by a valid operator code and 7 digits.
+ * @param {string} number - The phone number to validate.
+ * @returns {boolean} - True if the phone number is valid, false otherwise.
+ */
 function validatePhoneNumber(number) {
   const phoneNumberRegex = /^(09)(1[0-9]|3[0-9]|2[0-9])\d{7}$/;
 

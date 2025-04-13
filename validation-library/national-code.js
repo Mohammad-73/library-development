@@ -46,6 +46,12 @@ function validateNationalCode(code) {
   return 11 - remainder === check;
 }
 
+/**
+ * It receives a national code and checks if it is a valid 10-digit Iranian national code.
+ * The function uses a checksum algorithm to verify the validity of the code.
+ * @param {string} code - The national code to validate.
+ * @returns {boolean} - True if the national code is valid, false otherwise.
+ */
 // Clean Version With ChatGPT
 function validateNationalCode2(code) {
   if (typeof code !== "string" || !/^\d{10}$/.test(code)) return false;
