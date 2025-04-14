@@ -1,6 +1,6 @@
 {
   "name": "library-development",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "Is a Persian data validation library that helps you validate your input data effectively and correctly",
   "main": "index.js",
   "type": "module",
