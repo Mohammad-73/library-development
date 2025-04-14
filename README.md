@@ -49,6 +49,7 @@ import { module_name } from "library-validation";
 
 ```javascript
 import { validateUsernameWithRegex } from "library-validation";
+
 validateUsernameWithRegex("user_123"); // true ✅
 validateUsernameWithRegex("username"); // false ❌ (کمبود عدد یا زیرخط)
 ```
@@ -57,6 +58,7 @@ validateUsernameWithRegex("username"); // false ❌ (کمبود عدد یا زی
 
 ```javascript
 import { validateUrl } from "library-validation";
+
 validateUrl("https://example.com"); // true ✅
 validateUrl("example"); // false ❌
 ```
@@ -65,6 +67,7 @@ validateUrl("example"); // false ❌
 
 ```javascript
 import { valiDatePostalCode } from "library-validation";
+
 valiDatePostalCode("1833857755"); // true ✅
 valiDatePostalCode("183385775"); // false ❌ (کمتر از ۱۰ رقم)
 ```
@@ -73,6 +76,7 @@ valiDatePostalCode("183385775"); // false ❌ (کمتر از ۱۰ رقم)
 
 ```javascript
 import { validatePhoneNumber } from "library-validation";
+
 validatePhoneNumber("09123456789"); // true ✅
 validatePhoneNumber("9123456789"); // false ❌
 ```
@@ -81,6 +85,7 @@ validatePhoneNumber("9123456789"); // false ❌
 
 ```javascript
 import { validatePersianName } from "library-validation";
+
 validatePersianName("محمد رضایی"); // true ✅
 validatePersianName("John Doe"); // false ❌
 ```
@@ -89,6 +94,7 @@ validatePersianName("John Doe"); // false ❌
 
 ```javascript
 import { validatePassword } from "library-validation";
+
 validatePassword("Pass@1234"); // true ✅
 validatePassword("12345678"); // false ❌
 ```
@@ -97,6 +103,7 @@ validatePassword("12345678"); // false ❌
 
 ```javascript
 import { validateObject } from "library-validation";
+
 validateObject({ key: "value" }); // true ✅
 validateObject(null); // false ❌
 ```
@@ -105,6 +112,7 @@ validateObject(null); // false ❌
 
 ```javascript
 import { validateNationalCode } from "library-validation";
+
 validateNationalCode("0076228635"); // true ✅
 validateNationalCode("1111111111"); // false ❌
 ```
@@ -113,6 +121,7 @@ validateNationalCode("1111111111"); // false ❌
 
 ```javascript
 import { validateJalaliDate } from "library-validation";
+
 validateJalaliDate("1402/05/15"); // true ✅
 validateJalaliDate("1402/13/01"); // false ❌
 ```
@@ -121,6 +130,7 @@ validateJalaliDate("1402/13/01"); // false ❌
 
 ```javascript
 import { validateImageExtension } from "library-validation";
+
 validateImageExtension("image.jpg"); // true ✅
 validateImageExtension("file.pdf"); // false ❌
 ```
@@ -129,6 +139,7 @@ validateImageExtension("file.pdf"); // false ❌
 
 ```javascript
 import { validateFunction } from "library-validation";
+
 validateFunction(() => {}); // true ✅
 validateFunction("function"); // false ❌
 ```
@@ -137,6 +148,7 @@ validateFunction("function"); // false ❌
 
 ```javascript
 import { validateFileSize } from "library-validation";
+
 validateFileSize(smallFile); // true ✅ (حجم کمتر از ۱MB)
 validateFileSize(largeFile); // false ❌
 ```
@@ -145,6 +157,7 @@ validateFileSize(largeFile); // false ❌
 
 ```javascript
 import { valiDateEmail } from "library-validation";
+
 valiDateEmail("user@example.com"); // true ✅
 valiDateEmail("invalid@email"); // false ❌
 ```
@@ -153,6 +166,7 @@ valiDateEmail("invalid@email"); // false ❌
 
 ```javascript
 import { validateArray } from "library-validation";
+
 validateArray([1, 2, 3]); // true ✅
 validateArray("not array"); // false ❌
 ```

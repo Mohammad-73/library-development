@@ -30,7 +30,7 @@
  */
 export default function valiDateEmail(email) {
   const emailRegex = /^[\w-\.]+@([\w]+\.)[\w-]{2,4}$/;
-  console.log(emailRegex.test(email));
+  return emailRegex.test(email);
 }
 
 // ^ = 	Start of string

@@ -230,7 +230,7 @@ function validateFileSize(file, maxSize = 1024000) {
  */
 function valiDateEmail(email) {
   const emailRegex = /^[\w-\.]+@([\w]+\.)[\w-]{2,4}$/;
-  console.log(emailRegex.test(email));
+  return emailRegex.test(email);
 }
 
 /**
