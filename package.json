@@ -1,6 +1,6 @@
 {
   "name": "library-development",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Is a Persian data validation library that helps you validate your input data effectively and correctly",
   "main": "index.js",
   "type": "module",
@@ -22,5 +22,6 @@
   "bugs": {
     "url": "https://github.com/Mohammad-73/library-development/issues"
   },
-  "homepage": "https://github.com/Mohammad-73/library-development#readme"
+  "homepage": "https://github.com/Mohammad-73/library-development#readme",
+  "readme": "README.md"
 }
